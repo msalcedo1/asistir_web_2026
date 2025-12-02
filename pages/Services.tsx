@@ -187,12 +187,12 @@ const Services = () => {
   return (
     <div className="bg-asistir-light min-h-screen">
        <SEO 
-        title="Nuestros Servicios" 
+        title="Servicios de Medicina Laboral" 
         description="Cobertura integral en Salud Ocupacional: exámenes médicos, control de ausentismo, auditoría médica y campañas de vacunación." 
       />
        <div className="bg-asistir-teal text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-heading font-bold text-4xl mb-4">Nuestros Servicios</h1>
+          <h1 className="font-heading font-bold text-4xl mb-4">Servicios de Medicina Laboral</h1>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Ofrecemos una cobertura integral en Salud Ocupacional para su empresa, adaptándonos a sus necesidades específicas.</p>
         </div>
       </div>

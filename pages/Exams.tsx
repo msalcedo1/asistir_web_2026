@@ -7,7 +7,7 @@ const Exams = () => {
   return (
     <div className="bg-asistir-light min-h-screen">
       <SEO 
-        title="Exámenes en Salud Laboral" 
+        title="Exámenes Preocupacionales y Laborales" 
         description="Exámenes preocupacionales, periódicos, de egreso y post-ausencia para cumplir con la normativa y cuidar a su personal." 
       />
       <div className="bg-white py-16 shadow-sm">
@@ -15,7 +15,7 @@ const Exams = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-2/3">
               <span className="text-asistir-amber font-bold tracking-wider text-sm uppercase mb-2 block">Servicios Médicos</span>
-              <h1 className="font-heading font-bold text-4xl text-asistir-teal mb-4">Exámenes en Salud Laboral</h1>
+              <h1 className="font-heading font-bold text-4xl text-asistir-teal mb-4">Exámenes Preocupacionales y Laborales</h1>
               <p className="text-lg text-gray-600">
                 Evaluaciones médicas precisas para cada etapa de la relación laboral, garantizando el cumplimiento normativo y el cuidado de su personal.
               </p>

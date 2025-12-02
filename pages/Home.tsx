@@ -16,7 +16,7 @@ const Hero = () => (
         <span className="text-asistir-amber">Medicina Laboral</span>
       </h1>
       <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-        Optimizamos la salud de sus empleados, reducimos el ausentismo y garantizamos el cumplimiento normativo.
+        Expertos en <strong>Exámenes Preocupacionales</strong>, Control de Ausentismo y cumplimiento normativo para empresas en Zona Oeste.
       </p>
       <Link 
         to="/contacto" 
