@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             // Using window.open with _self is often handled better in various environments
-            // than window.location.href for mailto links, preventing some "white screen" issues.
             window.open(`mailto:${user}@${domain}`, '_self');
         });
         
@@ -42,24 +41,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Accordion Logic (for Services page)
     const accordionBtns = document.querySelectorAll('.accordion-btn');
+    
     accordionBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const content = btn.parentElement.nextElementSibling;
+        btn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent any default button behavior
+            
+            // ROBUST TRAVERSAL: Find the closest card container (the parent with .rounded-xl)
+            const card = btn.closest('.rounded-xl');
+            
+            if (!card) return; // Safety check
+
+            // Find the content div specifically inside this card
+            const content = card.querySelector('.accordion-content');
+            
+            if (!content) return; // Safety check if content div is missing
+
             const icon = btn.querySelector('.fa-chevron-down') || btn.querySelector('.fa-chevron-up');
+            const textSpan = btn.querySelector('span');
             
             if (content.style.maxHeight) {
-                // Close
+                // CLOSE
                 content.style.maxHeight = null;
-                btn.querySelector('span').textContent = 'Ver Detalle';
-                if(icon) {
+                if (textSpan) textSpan.textContent = 'Ver Detalle';
+                if (icon) {
                     icon.classList.remove('fa-chevron-up');
                     icon.classList.add('fa-chevron-down');
                 }
             } else {
-                // Open
+                // OPEN
                 content.style.maxHeight = content.scrollHeight + "px";
-                btn.querySelector('span').textContent = 'Ocultar Detalle';
-                if(icon) {
+                if (textSpan) textSpan.textContent = 'Ocultar Detalle';
+                if (icon) {
                     icon.classList.remove('fa-chevron-down');
                     icon.classList.add('fa-chevron-up');
                 }
