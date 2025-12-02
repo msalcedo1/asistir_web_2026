@@ -158,7 +158,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <span className="font-bold block text-gray-800">Horario de Atención</span>
-                    <span className="text-gray-600">Lunes a Viernes: 8:00 - 18:00 hs.<br/>Sábados: 8:00 - 12:00 hs.</span>
+                    <span className="text-gray-600">Lunes a Viernes: 8:00 - 17:00 hs.<br/>Sábados: 8:00 - 12:00 hs.</span>
                   </div>
                 </li>
               </ul>

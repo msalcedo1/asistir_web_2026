@@ -118,7 +118,7 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-bold text-lg mb-4">Horarios</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>Lun-Vie: 8:00 - 18:00</li>
+            <li>Lun-Vie: 8:00 - 17:00</li>
             <li>Sáb: 8:00 - 12:00</li>
             <li>Dom: Cerrado</li>
           </ul>
@@ -133,7 +133,7 @@ const Footer = () => (
 
 const WhatsAppFloat = () => (
   <a
-    href="https://wa.me/5491147581266"
+    href="https://wa.me/5491168770913"
     target="_blank"
     rel="noreferrer"
     className="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center"
@@ -170,7 +170,7 @@ const StructuredData = () => {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "08:00",
-        "closes": "18:00"
+        "closes": "17:00"
       },
       {
         "@type": "OpeningHoursSpecification",
