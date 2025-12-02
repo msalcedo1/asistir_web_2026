@@ -5,7 +5,7 @@ interface ObfuscatedMailProps {
   domain?: string;
   className?: string;
   icon?: React.ReactNode;
-  showText?: boolean;
+  label?: string;
 }
 
 const ObfuscatedMail: React.FC<ObfuscatedMailProps> = ({ 
@@ -13,7 +13,7 @@ const ObfuscatedMail: React.FC<ObfuscatedMailProps> = ({
   domain = 'asistir-srl.com.ar', 
   className = '',
   icon,
-  showText = true
+  label
 }) => {
   const [isClient, setIsClient] = useState(false);
 
@@ -24,21 +24,21 @@ const ObfuscatedMail: React.FC<ObfuscatedMailProps> = ({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (isClient) {
-      // Using window.open allows the browser to handle the protocol handler (mailto)
-      // without unloading the current page application context in some environments.
       window.open(`mailto:${user}@${domain}`, '_self');
     }
   };
   
   return (
     <a 
-      href="#"
+      href="javascript:void(0)"
       onClick={handleClick}
       className={`${className} cursor-pointer`}
       aria-label="Enviar correo electrónico"
     >
       {icon && <span className="shrink-0">{icon}</span>}
-      {showText && (
+      {label ? (
+        <span>{label}</span>
+      ) : (
         <span>
           {user}
           <span style={{ display: 'none' }}>-no-spam-</span>

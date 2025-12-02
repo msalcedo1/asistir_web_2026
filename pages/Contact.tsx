@@ -149,7 +149,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <span className="font-bold block text-gray-800">Email</span>
-                    <ObfuscatedMail className="text-gray-600 hover:text-asistir-teal" showText={true} />
+                    <ObfuscatedMail className="text-gray-600 hover:text-asistir-teal" />
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

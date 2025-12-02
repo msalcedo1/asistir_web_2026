@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Laboral en El Palomar y Zona Oeste | Asistir S.R.L.</title>
+    <meta name="description" content="Asistir S.R.L. ofrece soluciones integrales en medicina laboral, exámenes preocupacionales y control de ausentismo para empresas en Buenos Aires.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Medicina Laboral en El Palomar y Zona Oeste | Asistir S.R.L.">
+    <meta property="og:description" content="Asistir S.R.L. ofrece soluciones integrales en medicina laboral, exámenes preocupacionales y control de ausentismo para empresas en Buenos Aires.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/">
+    <link rel="canonical" href="https://www.asistir-srl.com.ar/">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' }
+            },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Asistir S.R.L.",
+      "image": "https://www.asistir-srl.com.ar/images/empresa-1.png",
+      "description": "Soluciones integrales en medicina laboral, control de ausentismo y exámenes preocupacionales.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pampa 1079",
+        "addressLocality": "El Palomar",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1684",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.62107,
+        "longitude": -58.59467
+      },
+      "telephone": "+541147581266",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "url": "https://www.asistir-srl.com.ar"
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-asistir-teal text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-asistir-amber"></i><span>Pampa 1079, El Palomar</span></div>
+            <div class="flex items-center gap-6">
+                <a href="tel:01147581266" class="flex items-center gap-2 hover:text-asistir-amber transition-colors"><i class="fas fa-phone"></i><span>(011) 4758-1266</span></a>
+                <a href="javascript:void(0)" class="flex items-center gap-2 hover:text-asistir-amber transition-colors obfuscated-mail"><i class="fas fa-envelope"></i><span>Email</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-asistir-teal">Asistir S.R.L.</a>
+                <nav class="hidden md:flex items-center gap-8 font-bold text-asistir-dark">
+                    <a href="index.html" class="text-asistir-teal transition-colors">Inicio</a>
+                    <a href="servicios.html" class="hover:text-asistir-teal transition-colors">Servicios</a>
+                    <a href="quienes-somos.html" class="hover:text-asistir-teal transition-colors">Quiénes Somos</a>
+                    <a href="contacto.html" class="bg-asistir-teal text-white px-6 py-2 rounded-full hover:bg-teal-900 transition-transform transform hover:scale-105">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-asistir-teal text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 flex flex-col gap-4 font-bold border-t mt-4 border-gray-100">
+                <a href="index.html" class="text-asistir-teal">Inicio</a>
+                <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative h-[600px] flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop')"></div>
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <div class="container mx-auto px-4 relative z-20">
+                <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+                    Soluciones Integrales en <br class="hidden md:block"/> 
+                    <span class="text-asistir-amber">Medicina Laboral</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                    Optimizamos la salud de sus empleados, reducimos el ausentismo y garantizamos el cumplimiento normativo.
+                </p>
+                <a href="contacto.html" class="inline-block bg-asistir-amber text-asistir-dark font-heading font-bold px-8 py-4 rounded-full hover:-translate-y-1 hover:shadow-lg transition-all">Solicitar Asesoramiento</a>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 bg-asistir-light">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl text-asistir-teal mb-4">Nuestros Servicios Principales</h2>
+                    <div class="w-24 h-1 bg-asistir-amber mx-auto rounded"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-heartbeat"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Exámenes Preocupacionales</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Aseguramos la aptitud psicofísica del personal al inicio y final de la relación laboral, de acuerdo a la normativa vigente.</p>
+                        <a href="examenes.html" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Medicina Laboral Integral</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Servicio médico permanente en planta para el cuidado continuo del personal, la prevención y la promoción de la salud.</p>
+                        <a href="servicios.html#atencion" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-home"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Control de Ausentismo</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Auditoría médica de ausencias por enfermedad con visitas a domicilio para un control efectivo del ausentismo.</p>
+                        <a href="ausentismo.html" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-balance-scale"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Asesoría Médico Legal</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Dictámenes, peritajes y soporte profesional en juntas médicas para la resolución de discrepancias.</p>
+                        <a href="servicios.html#legal" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Accidentología</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Investigación y análisis de accidentes de trabajo para determinar sus causas y desarrollar planes de prevención.</p>
+                        <a href="servicios.html#accidentologia" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
+                        <div class="text-asistir-teal mb-4 group-hover:scale-110 transition-transform duration-300 text-5xl"><i class="fas fa-crutch"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-3">Rehabilitación</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Programas de seguimiento y rehabilitación para la reincorporación segura y oportuna del empleado.</p>
+                        <a href="servicios.html#rehabilitacion" class="text-asistir-teal font-bold flex items-center gap-2 group-hover:gap-3 transition-all">Ver más <i class="fas fa-chevron-right text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="font-heading font-bold text-3xl text-asistir-teal mb-12">Confían en Nosotros</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center opacity-40 hover:opacity-100 transition-opacity duration-500">
+                    <div class="flex flex-col items-center gap-3">
+                        <i class="fas fa-industry text-6xl text-asistir-teal"></i>
+                        <span class="font-bold text-gray-500">Industria</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <i class="far fa-building text-6xl text-asistir-teal"></i>
+                        <span class="font-bold text-gray-500">Corporativo</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <i class="fas fa-truck text-6xl text-asistir-teal"></i>
+                        <span class="font-bold text-gray-500">Logística</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <i class="fas fa-hard-hat text-6xl text-asistir-teal"></i>
+                        <span class="font-bold text-gray-500">Construcción</span>
+                    </div>
+                </div>
+                <p class="mt-8 text-gray-500 text-sm">Empresas líderes de diversos sectores confían la salud de su personal en Asistir S.R.L.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-asistir-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4 text-asistir-amber">Asistir S.R.L.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Más de 35 años brindando soluciones integrales en Medicina Laboral para empresas de todo el país.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-white transition-colors">Servicios</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-white transition-colors">Quiénes Somos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex gap-3"><i class="fas fa-map-marker-alt text-asistir-amber mt-1"></i><span>Pampa 1079, El Palomar (1684)</span></li>
+                        <li class="flex gap-3"><i class="fas fa-phone text-asistir-amber mt-1"></i><span>(011) 4758-1266</span></li>
+                        <li class="flex gap-3"><i class="fas fa-envelope text-asistir-amber mt-1"></i><a href="javascript:void(0)" class="hover:text-white transition-colors obfuscated-mail">Email</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Horarios</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Lun-Vie: 8:00 - 18:00</li>
+                        <li>Sáb: 8:00 - 12:00</li>
+                        <li>Dom: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> Asistir S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Whatsapp Float -->
+    <a href="https://wa.me/5491147581266" target="_blank" class="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center w-14 h-14">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

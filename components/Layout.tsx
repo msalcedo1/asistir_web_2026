@@ -18,6 +18,7 @@ const TopBar = () => (
         <ObfuscatedMail 
           className="flex items-center gap-2 hover:text-asistir-amber transition-colors"
           icon={<Mail size={14} />}
+          label="Email"
         />
       </div>
     </div>
@@ -192,8 +193,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // We only want to scroll to top if there is NO hash in the URL.
-    // If there is a hash, the page specific component will handle the scrolling to the element.
     if (!window.location.hash) {
       window.scrollTo(0, 0);
     }

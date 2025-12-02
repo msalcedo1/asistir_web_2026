@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     mailLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = `mailto:${user}@${domain}`;
+            // Using window.open with _self is often handled better in various environments
+            // than window.location.href for mailto links, preventing some "white screen" issues.
+            window.open(`mailto:${user}@${domain}`, '_self');
         });
         
         // Optional: Hover text to show user "it works" without revealing to bots in source
