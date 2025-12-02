@@ -1,36 +1,37 @@
+
 import React from 'react';
 import SEO from '../components/SEO';
 
 const galleryImages = [
   {
-    src: "images/DIL_9955-HDR.jpg",
+    src: "images/empresa-1.png",
     alt: "Fachada de Asistir S.R.L. en El Palomar",
     caption: "Fachada Institucional"
   },
   {
-    src: "images/DIL_9670.JPG",
+    src: "images/empresa-2.png",
     alt: "Sala de espera confortable y climatizada",
     caption: "Sala de Espera"
   },
   {
-    src: "images/DIL_9618.JPG",
+    src: "images/empresa-3.png",
     alt: "Gimnasio de rehabilitación y kinesiología",
     caption: "Centro de Rehabilitación"
   },
   {
-    src: "images/DIL_9605.JPG",
-    alt: "Consultorio para exámenes oftalmológicos",
-    caption: "Consultorio Oftalmológico"
-  },
-  {
-    src: "images/DIL_9612.JPG",
+    src: "images/DIL_0346.jpg",
     alt: "Consultorio clínico completamente equipado",
     caption: "Consultorio Clínico"
   },
   {
-    src: "images/DIL_9574.JPG",
+    src: "images/DIL_0383.jpg",
     alt: "Consultorio de atención privada",
     caption: "Atención Privada"
+  },
+  {
+    src: "images/empresa-4.png",
+    alt: "Consultorio médico",
+    caption: "Consultorio"
   }
 ];
 
