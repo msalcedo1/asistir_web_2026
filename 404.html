@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Asistir S.R.L.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' } },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+    <div class="flex-grow flex flex-col items-center justify-center px-4 text-center">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 max-w-md w-full">
+            <div class="bg-orange-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-exclamation-triangle text-3xl text-asistir-amber"></i>
+            </div>
+            <h1 class="font-heading font-bold text-3xl text-asistir-teal mb-2">Página no encontrada</h1>
+            <p class="text-gray-600 mb-8">Lo sentimos, la página que está buscando no existe o ha sido movida.</p>
+            <a href="index.html" class="inline-block w-full bg-asistir-teal text-white font-bold py-3 rounded-lg hover:bg-teal-800 transition-colors">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

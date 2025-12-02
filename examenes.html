@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exámenes en Salud Laboral | Asistir S.R.L.</title>
+    <meta name="description" content="Exámenes preocupacionales, periódicos, de egreso y post-ausencia para cumplir con la normativa y cuidar a su personal.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Exámenes en Salud Laboral | Asistir S.R.L.">
+    <meta property="og:description" content="Exámenes médicos laborales para empresas.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/examenes.html">
+    <link rel="canonical" href="https://www.asistir-srl.com.ar/examenes.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' }
+            },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-asistir-light text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-asistir-teal text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-asistir-amber"></i><span>Pampa 1079, El Palomar</span></div>
+            <div class="flex items-center gap-6">
+                <a href="tel:01147581266" class="flex items-center gap-2 hover:text-asistir-amber"><i class="fas fa-phone"></i><span>(011) 4758-1266</span></a>
+                <a href="#" class="flex items-center gap-2 hover:text-asistir-amber obfuscated-mail"><i class="fas fa-envelope"></i><span>Email</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-asistir-teal">Asistir S.R.L.</a>
+                <nav class="hidden md:flex items-center gap-8 font-bold text-asistir-dark">
+                    <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                    <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                    <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                    <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-asistir-teal text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 flex flex-col gap-4 font-bold border-t mt-4 border-gray-100">
+                <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-white py-16 shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3">
+                        <span class="text-asistir-amber font-bold tracking-wider text-sm uppercase mb-2 block">Servicios Médicos</span>
+                        <h1 class="font-heading font-bold text-4xl text-asistir-teal mb-4">Exámenes en Salud Laboral</h1>
+                        <p class="text-lg text-gray-600">Evaluaciones médicas precisas para cada etapa de la relación laboral, garantizando el cumplimiento normativo y el cuidado de su personal.</p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="bg-teal-50 p-6 rounded-full">
+                            <i class="fas fa-clipboard-check text-6xl text-asistir-teal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3">
+                    <h2 class="font-heading font-bold text-2xl text-asistir-teal mb-6">Un Examen para Cada Necesidad</h2>
+                    <p class="text-gray-600 mb-8">Ofrecemos una cobertura completa de exámenes médicos laborales diseñados para proteger la salud de sus empleados y los intereses de su empresa:</p>
+
+                    <div class="grid gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Examen Preocupacional o de Ingreso</h3>
+                            <p class="text-gray-600">Determina la aptitud del postulante para el puesto, previniendo patologías preexistentes y futuros accidentes.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Examen Periódico</h3>
+                            <p class="text-gray-600">Evalúa la salud del empleado en función de los riesgos del puesto, permitiendo la detección temprana de enfermedades profesionales.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Examen de Egreso</h3>
+                            <p class="text-gray-600">Constata el estado de salud del empleado al finalizar la relación laboral.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Examen Post-Ausencia Prolongada</h3>
+                            <p class="text-gray-600">Evalúa la aptitud del trabajador para reincorporarse a sus tareas luego de una ausencia extendida.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Examen de Reubicación Laboral</h3>
+                            <p class="text-gray-600">Determina la aptitud para un nuevo puesto de trabajo dentro de la empresa.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-asistir-teal">
+                            <h3 class="font-bold text-lg text-asistir-teal mb-2">Acciones de Salud</h3>
+                            <p class="text-gray-600">Programas personalizados de prevención y promoción de la salud adaptados a las necesidades de su empresa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="lg:w-1/3">
+                    <div class="bg-asistir-teal text-white p-8 rounded-xl shadow-lg sticky top-24">
+                        <h4 class="font-heading font-bold text-xl mb-4 text-asistir-amber">Comprometidos con la Prevención</h4>
+                        <p class="mb-8 opacity-90 leading-relaxed">Nuestros exámenes no solo cumplen con la ley, sino que son una herramienta proactiva para fomentar un ambiente de trabajo más seguro y saludable.</p>
+                        <a href="contacto.html" class="block w-full text-center bg-white text-asistir-teal font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors">Coordinar Exámenes</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-asistir-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4 text-asistir-amber">Asistir S.R.L.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Más de 35 años brindando soluciones integrales en Medicina Laboral.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Servicios</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-white">Quiénes Somos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex gap-3"><i class="fas fa-map-marker-alt text-asistir-amber mt-1"></i><span>Pampa 1079, El Palomar</span></li>
+                        <li class="flex gap-3"><i class="fas fa-phone text-asistir-amber mt-1"></i><span>(011) 4758-1266</span></li>
+                        <li class="flex gap-3"><i class="fas fa-envelope text-asistir-amber mt-1"></i><a href="#" class="obfuscated-mail hover:text-white">Email</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Horarios</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Lun-Vie: 8:00 - 18:00</li>
+                        <li>Sáb: 8:00 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> Asistir S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/5491100000000" target="_blank" class="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center w-14 h-14"><i class="fab fa-whatsapp text-3xl"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>

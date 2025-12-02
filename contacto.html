@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Asistir S.R.L.</title>
+    <meta name="description" content="Contáctenos para servicios de medicina laboral en El Palomar. Tel: (011) 4758-1266. Pampa 1079.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | Asistir S.R.L.">
+    <meta property="og:description" content="Contáctenos para servicios de medicina laboral en El Palomar.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/contacto.html">
+    <link rel="canonical" href="https://www.asistir-srl.com.ar/contacto.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' }
+            },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-asistir-light text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-asistir-teal text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-asistir-amber"></i><span>Pampa 1079, El Palomar</span></div>
+            <div class="flex items-center gap-6">
+                <a href="tel:01147581266" class="flex items-center gap-2 hover:text-asistir-amber"><i class="fas fa-phone"></i><span>(011) 4758-1266</span></a>
+                <a href="#" class="flex items-center gap-2 hover:text-asistir-amber obfuscated-mail"><i class="fas fa-envelope"></i><span>Email</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-asistir-teal">Asistir S.R.L.</a>
+                <nav class="hidden md:flex items-center gap-8 font-bold text-asistir-dark">
+                    <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                    <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                    <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                    <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-asistir-teal text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 flex flex-col gap-4 font-bold border-t mt-4 border-gray-100">
+                <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-asistir-teal text-white py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="font-heading font-bold text-4xl mb-4">Contacto</h1>
+                <p class="text-lg opacity-90">Estamos aquí para ayudarle. Envíenos su consulta y le responderemos a la brevedad.</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Form Section -->
+                <div class="lg:w-2/3">
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="font-heading font-bold text-2xl text-asistir-teal mb-6">Formulario de Contacto</h2>
+                        
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="form-success" class="text-center py-12 hidden">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-check text-green-500 text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">¡Gracias por contactarnos!</h3>
+                            <p class="text-gray-600">Hemos recibido su mensaje. Nuestro equipo se pondrá en contacto con usted a la brevedad.</p>
+                            <button id="reset-form" class="mt-6 text-asistir-teal font-bold hover:underline">Enviar otro mensaje</button>
+                        </div>
+
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                            <input type="hidden" name="access_key" value="36ba381a-5f8c-4878-afbc-7192df27c264">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Nombre Completo</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-asistir-teal focus:border-transparent outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-asistir-teal focus:border-transparent outline-none transition-all">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Teléfono (Opcional)</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-asistir-teal focus:border-transparent outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label for="service" class="block text-sm font-bold text-gray-700 mb-2">Servicio de Interés</label>
+                                    <select id="service" name="service" class="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-asistir-teal focus:border-transparent outline-none transition-all">
+                                        <option value="Consulta General">Consulta General</option>
+                                        <option value="Examenes Preocupacionales">Exámenes Preocupacionales</option>
+                                        <option value="Control de Ausentismo">Control de Ausentismo</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-asistir-teal focus:border-transparent outline-none transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="bg-asistir-amber text-asistir-dark font-bold px-8 py-3 rounded-full hover:shadow-lg hover:-translate-y-1 transition-all">
+                                Enviar Mensaje
+                            </button>
+                            <p class="text-xs text-gray-500 mt-2">Protegido contra spam por Web3Forms.</p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Info Sidebar -->
+                <aside class="lg:w-1/3 space-y-8">
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h4 class="font-heading font-bold text-xl text-asistir-teal mb-6 border-b pb-2">Información de Contacto</h4>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="bg-teal-50 p-2 rounded-full text-asistir-teal"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                                <div>
+                                    <span class="font-bold block text-gray-800">Dirección</span>
+                                    <span class="text-gray-600">Pampa 1079, El Palomar (1684)<br/>Provincia de Buenos Aires</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="bg-teal-50 p-2 rounded-full text-asistir-teal"><i class="fas fa-phone text-xl"></i></div>
+                                <div>
+                                    <span class="font-bold block text-gray-800">Teléfono</span>
+                                    <a href="tel:01147581266" class="text-gray-600 hover:text-asistir-teal">(011) 4758-1266</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="bg-teal-50 p-2 rounded-full text-asistir-teal"><i class="fas fa-envelope text-xl"></i></div>
+                                <div>
+                                    <span class="font-bold block text-gray-800">Email</span>
+                                    <a href="#" class="text-gray-600 hover:text-asistir-teal obfuscated-mail">Email</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="bg-teal-50 p-2 rounded-full text-asistir-teal"><i class="fas fa-clock text-xl"></i></div>
+                                <div>
+                                    <span class="font-bold block text-gray-800">Horario de Atención</span>
+                                    <span class="text-gray-600">Lunes a Viernes: 8:00 - 18:00 hs.<br/>Sábados: 8:00 - 12:00 hs.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Location Section -->
+            <div class="mt-16">
+                <h2 class="font-heading font-bold text-3xl text-asistir-teal text-center mb-8">Ubicación y Transporte</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div class="bg-gray-200 h-96 rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.330949424615!2d-58.59467448476976!3d-34.62107008045501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb86177a6409d%3A0x67e825301132635!2sPampa%201079%2C%20El%20Palomar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1625600000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="grid gap-4">
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex gap-4 hover:-translate-y-1 transition-transform">
+                            <div class="bg-asistir-teal text-white w-12 h-12 flex items-center justify-center rounded-full shrink-0"><i class="fas fa-train"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg text-asistir-teal">Tren</h3>
+                                <p class="text-gray-600 text-sm">Línea San Martín, Estación El Palomar.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex gap-4 hover:-translate-y-1 transition-transform">
+                            <div class="bg-asistir-teal text-white w-12 h-12 flex items-center justify-center rounded-full shrink-0"><i class="fas fa-bus"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg text-asistir-teal">Colectivos</h3>
+                                <p class="text-gray-600 text-sm">Líneas: 53, 123, 182, 252, 320, 326, 634.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex gap-4 hover:-translate-y-1 transition-transform">
+                            <div class="bg-asistir-teal text-white w-12 h-12 flex items-center justify-center rounded-full shrink-0"><i class="fas fa-car"></i></div>
+                            <div>
+                                <h3 class="font-bold text-lg text-asistir-teal">Auto</h3>
+                                <p class="text-gray-600 text-sm mb-2">A 5 minutos del Acceso Oeste.</p>
+                                <a href="https://www.google.com/maps/dir//Pampa+1079,+El+Palomar" target="_blank" class="text-asistir-amber font-bold text-sm hover:underline">Cómo llegar →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-asistir-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4 text-asistir-amber">Asistir S.R.L.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Más de 35 años brindando soluciones integrales en Medicina Laboral.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Servicios</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-white">Quiénes Somos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex gap-3"><i class="fas fa-map-marker-alt text-asistir-amber mt-1"></i><span>Pampa 1079, El Palomar</span></li>
+                        <li class="flex gap-3"><i class="fas fa-phone text-asistir-amber mt-1"></i><span>(011) 4758-1266</span></li>
+                        <li class="flex gap-3"><i class="fas fa-envelope text-asistir-amber mt-1"></i><a href="#" class="obfuscated-mail hover:text-white">Email</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Horarios</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Lun-Vie: 8:00 - 18:00</li>
+                        <li>Sáb: 8:00 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> Asistir S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/5491100000000" target="_blank" class="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center w-14 h-14"><i class="fab fa-whatsapp text-3xl"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>

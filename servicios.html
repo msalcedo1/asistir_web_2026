@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios | Asistir S.R.L.</title>
+    <meta name="description" content="Cobertura integral en Salud Ocupacional: exámenes médicos, control de ausentismo, auditoría médica y campañas de vacunación.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nuestros Servicios | Asistir S.R.L.">
+    <meta property="og:description" content="Cobertura integral en Salud Ocupacional.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/servicios.html">
+    <link rel="canonical" href="https://www.asistir-srl.com.ar/servicios.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' }
+            },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-asistir-light text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-asistir-teal text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-asistir-amber"></i> <span>Pampa 1079, El Palomar</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:01147581266" class="flex items-center gap-2 hover:text-asistir-amber transition-colors"><i class="fas fa-phone"></i><span>(011) 4758-1266</span></a>
+                <a href="#" class="flex items-center gap-2 hover:text-asistir-amber transition-colors obfuscated-mail"><i class="fas fa-envelope"></i><span>Email</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-asistir-teal">Asistir S.R.L.</a>
+                <nav class="hidden md:flex items-center gap-8 font-bold text-asistir-dark">
+                    <a href="index.html" class="hover:text-asistir-teal transition-colors">Inicio</a>
+                    <a href="servicios.html" class="text-asistir-teal transition-colors">Servicios</a>
+                    <a href="quienes-somos.html" class="hover:text-asistir-teal transition-colors">Quiénes Somos</a>
+                    <a href="contacto.html" class="bg-asistir-teal text-white px-6 py-2 rounded-full hover:bg-teal-900 transition-transform transform hover:scale-105">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-asistir-teal text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 flex flex-col gap-4 font-bold border-t mt-4 border-gray-100">
+                <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                <a href="servicios.html" class="text-asistir-teal">Servicios</a>
+                <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-asistir-teal text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="font-heading font-bold text-4xl mb-4">Nuestros Servicios</h1>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">Ofrecemos una cobertura integral en Salud Ocupacional para su empresa.</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Service: Examenes -->
+                <div id="examenes" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-heartbeat"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Exámenes en Salud</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Preocupacionales, periódicos, de egreso, post-ausencia y más.</p>
+                        <a href="examenes.html" class="text-white bg-asistir-teal px-4 py-2 rounded-lg text-sm font-bold inline-block hover:bg-teal-800 transition-colors">Ver Detalle</a>
+                    </div>
+                </div>
+
+                <!-- Service: Ejecutivos -->
+                <div id="ejecutivos" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Check Up Ejecutivos</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Evaluación médica completa para el personal gerencial.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Laboratorio Completo</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Imágenes: Rx Tórax, Columna</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Exámenes: Clínico, Oftalmológico, Neurológico, Cardiológico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Psicotecnico -->
+                <div id="psicotecnico" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-clipboard-list"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Gabinete Psicotécnico</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Evaluaciones psicológicas para selección y orientación.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Psicodiagnósticos para selección</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Test de Orientación Vocacional</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Test de Personalidad e IQ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Vacunacion -->
+                <div id="vacunacion" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-syringe"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Campañas de Vacunación</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Prevención estacional (ej. Antigripal) en su empresa.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Vacunación in-company</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Disminución del ausentismo</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Mejora de la productividad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Legal -->
+                <div id="legal" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-balance-scale"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Asesoría Médico Legal</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Respaldo legal y validación jurídica de la operatoria.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Pericias y Juntas Médicas</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Gestión de Demandas Laborales</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Estudio integral de accidentes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Accidentologia -->
+                <div id="accidentologia" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Accidentología</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Atención y gestión de accidentes de trabajo.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Coordinación inmediata de primeros auxilios</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Traslado y atención médica</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Servicio de ambulancias y UTIM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Rehabilitacion -->
+                <div id="rehabilitacion" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-crutch"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Rehabilitación</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Servicio de Fisiatría y Kinesiología.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Servicio completo y climatizado</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Atención de Lunes a Viernes</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Rehabilitación oportuna</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Atencion -->
+                <div id="atencion" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Atención Médica</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Atención clínica y de especialidades al personal.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Orientación asistencial</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Evaluación de necesidad de reposo</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Detección de patologías</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service: Ausentismo -->
+                <div id="ausentismo" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-home"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Reconocimiento Domiciliario</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Control de ausentismo con visitas médicas.</p>
+                        <a href="ausentismo.html" class="text-white bg-asistir-teal px-4 py-2 rounded-lg text-sm font-bold inline-block hover:bg-teal-800 transition-colors">Ver Detalle</a>
+                    </div>
+                </div>
+
+                <!-- Service: Area Protegida -->
+                <div id="area-protegida" class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md scroll-mt-32">
+                    <div class="p-6">
+                        <div class="text-asistir-teal mb-4 bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center text-2xl"><i class="fas fa-ambulance"></i></div>
+                        <h3 class="font-heading font-bold text-xl text-asistir-teal mb-2">Área Protegida</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Emergencias médicas dentro de sus instalaciones.</p>
+                        <button class="accordion-btn flex items-center gap-2 text-asistir-teal font-bold text-sm hover:text-asistir-amber transition-colors outline-none">
+                            <span>Ver Detalle</span> <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content bg-gray-50 px-6 max-h-0 overflow-hidden transition-all duration-300">
+                        <ul class="space-y-2 py-4">
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Unidades de alta complejidad</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Atención de emergencias con riesgo de vida</li>
+                            <li class="text-sm text-gray-600"><span class="text-asistir-teal font-bold">•</span> Cobertura para personal y visitantes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Call to Action Card -->
+                <div class="bg-asistir-teal text-white rounded-xl shadow-sm p-8 flex flex-col justify-center items-center text-center">
+                    <h3 class="font-heading font-bold text-xl mb-4">¿Necesita algo más?</h3>
+                    <p class="mb-6 opacity-90 text-sm">Si no encuentra el servicio que necesita, contáctenos para recibir asesoramiento personalizado.</p>
+                    <a href="contacto.html" class="bg-asistir-amber text-asistir-dark font-bold px-6 py-2 rounded-full hover:bg-white transition-colors">
+                        Contáctenos
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-asistir-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4 text-asistir-amber">Asistir S.R.L.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Más de 35 años brindando soluciones integrales en Medicina Laboral.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Servicios</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-white">Quiénes Somos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex gap-3"><i class="fas fa-map-marker-alt text-asistir-amber mt-1"></i><span>Pampa 1079, El Palomar (1684)</span></li>
+                        <li class="flex gap-3"><i class="fas fa-phone text-asistir-amber mt-1"></i><span>(011) 4758-1266</span></li>
+                        <li class="flex gap-3"><i class="fas fa-envelope text-asistir-amber mt-1"></i><a href="#" class="obfuscated-mail hover:text-white">Email</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Horarios</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Lun-Vie: 8:00 - 18:00</li>
+                        <li>Sáb: 8:00 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> Asistir S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491100000000" target="_blank" class="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center w-14 h-14">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

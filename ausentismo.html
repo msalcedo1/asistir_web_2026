@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ausentismo | Asistir S.R.L.</title>
+    <meta name="description" content="Gestión profesional de ausentismo: visitas domiciliarias, auditoría médica y reducción de costos laborales.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Control de Ausentismo | Asistir S.R.L.">
+    <meta property="og:description" content="Gestión profesional de ausentismo para empresas.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/ausentismo.html">
+    <link rel="canonical" href="https://www.asistir-srl.com.ar/ausentismo.html">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              asistir: { teal: '#004d40', amber: '#ffab00', dark: '#333333', light: '#f4f6f7' }
+            },
+            fontFamily: { sans: ['Lato', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-asistir-light text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-asistir-teal text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-asistir-amber"></i><span>Pampa 1079, El Palomar</span></div>
+            <div class="flex items-center gap-6">
+                <a href="tel:01147581266" class="flex items-center gap-2 hover:text-asistir-amber"><i class="fas fa-phone"></i><span>(011) 4758-1266</span></a>
+                <a href="#" class="flex items-center gap-2 hover:text-asistir-amber obfuscated-mail"><i class="fas fa-envelope"></i><span>Email</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-heading font-bold text-2xl text-asistir-teal">Asistir S.R.L.</a>
+                <nav class="hidden md:flex items-center gap-8 font-bold text-asistir-dark">
+                    <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                    <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                    <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                    <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-asistir-teal text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden pt-4 pb-2 flex flex-col gap-4 font-bold border-t mt-4 border-gray-100">
+                <a href="index.html" class="hover:text-asistir-teal">Inicio</a>
+                <a href="servicios.html" class="hover:text-asistir-teal">Servicios</a>
+                <a href="quienes-somos.html" class="hover:text-asistir-teal">Quiénes Somos</a>
+                <a href="contacto.html" class="text-asistir-teal">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="bg-white py-16 shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3">
+                        <span class="text-asistir-amber font-bold tracking-wider text-sm uppercase mb-2 block">Gestión Médica</span>
+                        <h1 class="font-heading font-bold text-4xl text-asistir-teal mb-4">Control de Ausentismo Laboral</h1>
+                        <p class="text-lg text-gray-600">Una gestión médica profesional para reducir costos y optimizar la productividad de su empresa.</p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="bg-teal-50 p-6 rounded-full">
+                            <i class="fas fa-home text-6xl text-asistir-teal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3">
+                    <h2 class="font-heading font-bold text-2xl text-asistir-teal mb-6">Valide licencias y proteja a su equipo</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        El ausentismo imprevisto genera costos y afecta la planificación. Nuestro servicio de control de ausentismo le brinda 
+                        una gestión médica profesional para validar las licencias y ofrecer un seguimiento que protege tanto al empleado como a la empresa.
+                    </p>
+
+                    <h3 class="font-bold text-xl text-gray-800 mb-6">Una Gestión Médica Precisa y Confiable</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <i class="fas fa-home text-asistir-amber text-3xl mb-4"></i>
+                            <h4 class="font-bold text-lg text-asistir-teal mb-2">Visitas a Domicilio</h4>
+                            <p class="text-gray-600 text-sm">Médicos profesionales constatan la condición del empleado en su domicilio.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <i class="fas fa-user-check text-asistir-amber text-3xl mb-4"></i>
+                            <h4 class="font-bold text-lg text-asistir-teal mb-2">Auditoría en Consultorio</h4>
+                            <p class="text-gray-600 text-sm">Evaluaciones en nuestro centro para un diagnóstico más profundo.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <i class="fas fa-file-medical-alt text-asistir-amber text-3xl mb-4"></i>
+                            <h4 class="font-bold text-lg text-asistir-teal mb-2">Informes Detallados</h4>
+                            <p class="text-gray-600 text-sm">Reciba un reporte claro con las conclusiones médicas para su gestión.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <i class="fas fa-clock text-asistir-amber text-3xl mb-4"></i>
+                            <h4 class="font-bold text-lg text-asistir-teal mb-2">Seguimiento Prolongado</h4>
+                            <p class="text-gray-600 text-sm">Monitoreo continuo para planificar el regreso al trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="lg:w-1/3">
+                    <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-asistir-amber">
+                        <h4 class="font-heading font-bold text-xl mb-6 text-asistir-teal">Beneficios Para Su Empresa</h4>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-gray-700"><div class="w-2 h-2 rounded-full bg-asistir-amber"></div> Reducción de Costos</li>
+                            <li class="flex items-center gap-3 text-gray-700"><div class="w-2 h-2 rounded-full bg-asistir-amber"></div> Mejora de la Productividad</li>
+                            <li class="flex items-center gap-3 text-gray-700"><div class="w-2 h-2 rounded-full bg-asistir-amber"></div> Información para Decisiones</li>
+                            <li class="flex items-center gap-3 text-gray-700"><div class="w-2 h-2 rounded-full bg-asistir-amber"></div> Respaldo Médico Profesional</li>
+                        </ul>
+                        <a href="contacto.html" class="block w-full text-center bg-asistir-teal text-white font-bold py-3 rounded-lg hover:bg-teal-800 transition-colors">Solicitar Información</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-asistir-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4 text-asistir-amber">Asistir S.R.L.</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Más de 35 años brindando soluciones integrales en Medicina Laboral.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Servicios</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-white">Quiénes Somos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex gap-3"><i class="fas fa-map-marker-alt text-asistir-amber mt-1"></i><span>Pampa 1079, El Palomar</span></li>
+                        <li class="flex gap-3"><i class="fas fa-phone text-asistir-amber mt-1"></i><span>(011) 4758-1266</span></li>
+                        <li class="flex gap-3"><i class="fas fa-envelope text-asistir-amber mt-1"></i><a href="#" class="obfuscated-mail hover:text-white">Email</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Horarios</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Lun-Vie: 8:00 - 18:00</li>
+                        <li>Sáb: 8:00 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> Asistir S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/5491100000000" target="_blank" class="fixed bottom-8 right-8 bg-[#25d366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-40 flex items-center justify-center w-14 h-14"><i class="fab fa-whatsapp text-3xl"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>
