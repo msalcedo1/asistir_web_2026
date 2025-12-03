@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /old_wordpress/
 
 Sitemap: https://www.asistir-srl.com.ar/sitemap.xml
