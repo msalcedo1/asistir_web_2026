@@ -111,6 +111,7 @@ const Footer = () => (
               <ObfuscatedMail 
                 className="flex items-center gap-3 hover:text-white transition-colors"
                 icon={<Mail size={16} className="text-asistir-amber shrink-0" />}
+                label="Email"
               />
             </li>
           </ul>

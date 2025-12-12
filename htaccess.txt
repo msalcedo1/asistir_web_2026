@@ -1,0 +1,68 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# ----------------------------------------------------------------------
+# Force HTTPS and WWW
+# ----------------------------------------------------------------------
+# This block checks if the request is NOT HTTPS or if the host is NOT www.
+# If either is true, it redirects to https://www.asistir-srl.com.ar/
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.asistir-srl.com.ar/$1 [L,R=301,NE]
+
+# ----------------------------------------------------------------------
+# Custom Error Pages
+# ----------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ----------------------------------------------------------------------
+# Security Headers
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Force HTTPS for 1 year (HSTS)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    
+    # Prevent browsers from MIME-sniffing a response away from the declared content-type
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable XSS protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Control how much referrer information is sent
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Restrict browser features (Camera, Mic, Geolocation) since not used
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Browser Caching (Core Web Vitals)
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS & JS
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+
+    # Default
+    ExpiresDefault "access plus 2 days"
+</IfModule>
