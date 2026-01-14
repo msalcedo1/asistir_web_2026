@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -11,19 +12,17 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({ 
   title, 
   description, 
-  image = 'https://www.asistir-srl.com.ar/images/empresa-1.png', // Default image
+  image = 'https://www.asistir-srl.com.ar/images/empresa-1.png',
   type = 'website'
 }) => {
   const location = useLocation();
   const siteTitle = 'Asistir S.R.L.';
   const fullTitle = `${title} | ${siteTitle}`;
-  const currentUrl = `https://www.asistir-srl.com.ar/#${location.pathname}`;
+  const currentUrl = `https://www.asistir-srl.com.ar${location.pathname === '/' ? '' : location.pathname}`;
 
   useEffect(() => {
-    // Update Title
     document.title = fullTitle;
 
-    // Helper to update meta tags
     const updateMeta = (name: string, content: string, attribute = 'name') => {
       let element = document.querySelector(`meta[${attribute}="${name}"]`);
       if (!element) {
@@ -34,10 +33,7 @@ const SEO: React.FC<SEOProps> = ({
       element.setAttribute('content', content);
     };
 
-    // Standard Meta
     updateMeta('description', description);
-    
-    // Open Graph / Facebook / LinkedIn
     updateMeta('og:title', fullTitle, 'property');
     updateMeta('og:description', description, 'property');
     updateMeta('og:url', currentUrl, 'property');
@@ -45,7 +41,6 @@ const SEO: React.FC<SEOProps> = ({
     updateMeta('og:image', image, 'property');
     updateMeta('og:site_name', siteTitle, 'property');
 
-    // Canonical
     let linkRelCanonical = document.querySelector("link[rel='canonical']");
     if (!linkRelCanonical) {
       linkRelCanonical = document.createElement('link');

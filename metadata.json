@@ -1,5 +1,7 @@
 {
   "name": "Asistir S.R.L. - Medicina Laboral",
-  "description": "Soluciones integrales en medicina laboral, control de ausentismo y exámenes preocupacionales.",
-  "requestFramePermissions": []
+  "description": "Soluciones integrales en medicina laboral, control de ausentismo y exámenes preocupacionales en El Palomar y Zona Oeste.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
 }

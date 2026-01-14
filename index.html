@@ -1,20 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistir S.R.L. | Medicina Laboral</title>
-    <meta name="description" content="Soluciones integrales en medicina laboral, exámenes preocupacionales y control de ausentismo en El Palomar y Zona Oeste.">
+    <title>Asistir S.R.L. | Medicina Laboral y Exámenes Preocupacionales</title>
+    <meta name="description" content="Líderes en medicina laboral en Zona Oeste. Realizamos exámenes preocupacionales, periódicos y control de ausentismo con resultados en 48hs.">
     
-    <!-- Open Graph / SEO Defaults -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Asistir S.R.L. | Medicina Laboral">
-    <meta property="og:description" content="Soluciones integrales en medicina laboral, exámenes preocupacionales y control de ausentismo.">
-    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
-    <meta property="og:url" content="https://www.asistir-srl.com.ar/">
+    <!-- Security & Canonical -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="canonical" href="https://www.asistir-srl.com.ar/">
 
-    <!-- Tailwind CSS -->
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Asistir S.R.L. | Medicina Laboral">
+    <meta property="og:description" content="Soluciones integrales en medicina laboral, exámenes preocupacionales y control de ausentismo en El Palomar.">
+    <meta property="og:image" content="https://www.asistir-srl.com.ar/images/empresa-1.png">
+    <meta property="og:url" content="https://www.asistir-srl.com.ar/">
+    <meta property="og:site_name" content="Asistir S.R.L.">
+
+    <!-- Tailwind CSS (Loaded via Secure HTTPS) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,81 +29,42 @@
               asistir: {
                 teal: '#004d40',
                 amber: '#ffab00',
-                dark: '#333333',
-                light: '#f4f6f7'
+                dark: '#1a1a1a',
+                light: '#f8fafc'
               }
             },
             fontFamily: {
-              sans: ['Lato', 'sans-serif'],
-              heading: ['Montserrat', 'sans-serif'],
+              sans: ['Lato', 'system-ui', 'sans-serif'],
+              heading: ['Montserrat', 'system-ui', 'sans-serif'],
             }
           }
         }
       }
     </script>
 
-    <!-- Fonts -->
+    <!-- Fonts & Icons (Loaded via Secure HTTPS) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
-      "name": "Asistir S.R.L.",
-      "image": "https://www.asistir-srl.com.ar/images/empresa-1.png",
-      "description": "Soluciones integrales en medicina laboral, control de ausentismo y exámenes preocupacionales.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pampa 1079",
-        "addressLocality": "El Palomar",
-        "addressRegion": "Buenos Aires",
-        "postalCode": "1684",
-        "addressCountry": "AR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -34.62107,
-        "longitude": -58.59467
-      },
-      "telephone": "+541147581266",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "12:00"
-        }
-      ],
-      "url": "https://www.asistir-srl.com.ar"
-    }
-    </script>
     <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@18.2.0",
     "react/": "https://esm.sh/react@18.2.0/",
-    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client?deps=react@18.2.0",
-    "react-dom": "https://esm.sh/react-dom@18.2.0?deps=react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
     "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0",
     "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
 </script>
 </head>
-<body class="bg-gray-50 text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-slate-50 text-asistir-dark font-sans antialiased flex flex-col min-h-screen">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
